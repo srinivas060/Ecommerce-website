@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoMart</title>
+  <link rel="stylesheet" href="wesite.css" />
+</head>
+<body>
+  <header>
+    <h1>EcoMart</h1>
+    <nav>
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('products')">Products</button>
+      <button onclick="showSection('contact')">Contact</button>
+      <div id="cart-count">🛒 0</div>
+    </nav>
+  </header>
+
+  <main>
+   <section id="home" class="active">
+  <div class="banner" id="banner">
+    <div class="banner-text">
+      <h2>Welcome to EcoMart</h2>
+      <p>Shop smart. Shop sustainable. Home products delivered to your door.</p>
+      <button onclick="showSection('products')">Start Shopping</button>
+    </div>
+  </div>
+</section>
+
+
+    <section id="products">
+      <h2>Products</h2>
+      <div class="product-list">
+        <div class="product-card">
+          <img src="d679f934-5957-4c51-a88f-3bacea57d8f7.jpg" alt="Reusable Bottle" />
+          <h3>Reusable Bottle</h3>
+          <p>$10</p>
+          <button onclick="addToCart('Reusable Bottle')">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+          <img src="photo_2025-05-18_20-16-32.jpg" alt="Soap" />
+          <h3>Soap</h3>
+          <p>$5</p>
+          <button onclick="addToCart('Soap')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="WhatsApp Image 2025-05-16 at 12.25.35_b89f18c0.jpg" alt="Watch" />
+          <h3>Watch</h3>
+          <p>$7</p>
+          <button onclick="addToCart('Watch')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="s841777213772365416_p136_i3_w1600.jpeg" alt="Bamboo Toothbrush" />
+          <h3>Bamboo Toothbrush</h3>
+          <p>$7</p>
+          <button onclick="addToCart('Bamboo Toothbrush')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="photo_2025-05-18_20-15-58.jpg" alt="coconut fiber scrub" />
+          <h3>coconut fiber scrub</h3>
+          <p>$7</p>
+          <button onclick="addToCart('coconut fiber scrub')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="OIP.jpg" alt="Glass Storage Jars" />
+          <h3>Glass Storage Jars</h3>
+          <p>$7</p>
+          <button onclick="addToCart('Glass Storage Jars')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="61YeTjWdBgL.jpg" alt="Compost Bin" />
+          <h3>Compost Bin</h3>
+          <p>$7</p>
+          <button onclick="addToCart('Compost Bin')">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="il_fullxfull.2577733047_dfoz.webp" alt="Cloth Napkins" />
+          <h3>Cloth Napkins</h3>
+          <p>$7</p>
+          <button onclick="addToCart('Cloth Napkins')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="Bamboo-Straw-Set.jpg" alt="Straw set" />
+          <h3>Straw set</h3>
+          <p>$7</p>
+          <button onclick="addToCart('Straw set')">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+          <img src="WhatsApp Image 2025-05-16 at 12.25.35_1665cbfc.jpg" alt="Bag" />
+          <h3>Bag</h3>
+          <p>$7</p>
+          <button onclick="addToCart('Bag')">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: support@ecomart.com</p>
+      <p>Phone: +1-234-567-890</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EcoMart. All rights reserved.</p>
+  </footer>
+
+  <script src="website1.js"></script>
+</body>
+</html>
